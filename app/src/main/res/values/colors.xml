@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="vert1">#AEF5F0</color>
+    <color name="Box_Question_color">#03A8A0</color>
+    <color name="Box_Option_Color">#47D1B6</color>
+    <color name="Bonne_reponse">#11FA1A</color>
+    <color name="Mauvaise_reponse">#FA3011</color>
+</resources>

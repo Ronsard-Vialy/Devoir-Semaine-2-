@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Devoir Semaine 2</string>
+    <string name="Question">Dans quelle ville a lieu cette formation  sur Android Studio</string>
+    <string name="Les_Cayes">Dans la ville des Cayes</string>
+    <string name="Port_au_Prince">Dans la ville de Port-au-Prince</string>
+    <string name="Saint_Marc">Dans la ville de Saint-Marc</string>
+</resources>
