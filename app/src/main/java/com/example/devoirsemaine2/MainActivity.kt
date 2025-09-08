@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.view.View
-
+import android.widget.RelativeLayout
 
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             val box1 =findViewById<TextView>(R.id.Exemple1)
             val box2 =findViewById<TextView>(R.id.Exemple2)
             val box3 =findViewById<TextView>(R.id.Exemple3)
+            val fond =findViewById<RelativeLayout>(R.id.main)
 
 
         question.setOnClickListener { question.visibility = View.GONE
@@ -61,6 +62,11 @@ class MainActivity : AppCompatActivity() {
             box1.setBackgroundDrawable(getResources().getDrawable(R.drawable.bonne_reponse))
             box3.setBackgroundDrawable(getResources().getDrawable(R.drawable.mauvaise_reponse))
             box2.setBackgroundDrawable(getResources().getDrawable(R.drawable.answer_background))
+        }
+        fond.setOnClickListener {
+            box1.setBackgroundDrawable(getResources().getDrawable(R.drawable.answer_background))
+            box2.setBackgroundDrawable(getResources().getDrawable(R.drawable.answer_background))
+            box3.setBackgroundDrawable(getResources().getDrawable(R.drawable.answer_background))
         }
 
         }
