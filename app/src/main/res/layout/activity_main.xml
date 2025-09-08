@@ -10,6 +10,7 @@
     android:paddingTop="50dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
+    android:paddingBottom="40dp"
     >
 
 
@@ -35,17 +36,23 @@
         android:layout_margin="15dp"
         android:visibility="invisible"
         android:background="@drawable/answer_background"
-        android:padding="10dp"
+        android:paddingBottom="40dp"
+        android:paddingTop="40dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
         android:textStyle="bold"
         android:textSize="30sp"
+        android:textAlignment="center"
         />
     <TextView
         android:id="@+id/Exemple1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Les_Cayes"
-        android:layout_below="@id/Question_card"
-        android:layout_margin="15dp"
+        android:layout_above="@id/Exemple2"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/answer_background"
         android:padding="10dp"
@@ -59,8 +66,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Saint_Marc"
-        android:layout_below="@id/Exemple1"
-        android:layout_margin="15dp"
+        android:layout_above="@id/Exemple3"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/answer_background"
         android:textStyle="bold"
@@ -73,8 +82,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/Port_au_Prince"
-        android:layout_below="@id/Exemple2"
-        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="90dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/answer_background"
         android:padding="10dp"
@@ -86,24 +97,25 @@
         />
     <ImageView
         android:id="@+id/ne_pas_voir"
+        android:contentDescription="@string/description_icone_vsivble"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/icone_invisible"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/Exemple3"
         android:layout_marginTop="100dp"
         android:visibility="invisible"
+        android:layout_alignParentBottom="true"
 
 
         />
     <ImageView
         android:id="@+id/voir"
+        android:contentDescription="@string/description_icone_invsivble"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/icone_visible"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/Exemple3"
         android:layout_marginTop="100dp"
-
+        android:layout_alignParentBottom="true"
         />
 </RelativeLayout>

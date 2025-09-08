@@ -4,4 +4,6 @@
     <string name="Les_Cayes">Dans la ville des Cayes</string>
     <string name="Port_au_Prince">Dans la ville de Port-au-Prince</string>
     <string name="Saint_Marc">Dans la ville de Saint-Marc</string>
+    <string name="description_icone_vsivble">Icone qui d\'afficher le reponses</string>
+    <string name="description_icone_invsivble">Icone qui permet de cahcer les reponses</string>
 </resources>

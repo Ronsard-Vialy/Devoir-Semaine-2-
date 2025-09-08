@@ -42,17 +42,25 @@ class MainActivity : AppCompatActivity() {
                 invisibleimg.visibility= View.INVISIBLE
                 box1.visibility=View.INVISIBLE
                 box2.visibility=View.INVISIBLE
-                box3.visibility=View.INVISIBLE }
+                box3.visibility=View.INVISIBLE
+                box1.setBackgroundDrawable(getResources().getDrawable(R.drawable.answer_background))
+                box2.setBackgroundDrawable(getResources().getDrawable(R.drawable.answer_background))
+                box3.setBackgroundDrawable(getResources().getDrawable(R.drawable.answer_background))
+            }
             box1.setOnClickListener {
-                box1.setBackgroundColor(getResources().getColor(R.color.Bonne_reponse))
+                box1.setBackgroundDrawable(getResources().getDrawable(R.drawable.bonne_reponse))
+                box2.setBackgroundDrawable(getResources().getDrawable(R.drawable.answer_background))
+                box3.setBackgroundDrawable(getResources().getDrawable(R.drawable.answer_background))
             }
         box2.setOnClickListener {
-            box1.setBackgroundColor(getResources().getColor(R.color.Bonne_reponse))
-            box2.setBackgroundColor(getResources().getColor(R.color.Mauvaise_reponse))
+            box1.setBackgroundDrawable(getResources().getDrawable(R.drawable.bonne_reponse))
+            box2.setBackgroundDrawable(getResources().getDrawable(R.drawable.mauvaise_reponse))
+            box3.setBackgroundDrawable(getResources().getDrawable(R.drawable.answer_background))
         }
         box3.setOnClickListener {
-            box1.setBackgroundColor(getResources().getColor(R.color.Bonne_reponse))
-            box3.setBackgroundColor(getResources().getColor(R.color.Mauvaise_reponse))
+            box1.setBackgroundDrawable(getResources().getDrawable(R.drawable.bonne_reponse))
+            box3.setBackgroundDrawable(getResources().getDrawable(R.drawable.mauvaise_reponse))
+            box2.setBackgroundDrawable(getResources().getDrawable(R.drawable.answer_background))
         }
 
         }
